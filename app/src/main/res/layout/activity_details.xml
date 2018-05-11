@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainBG"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2ca5f5"
+    android:orientation="vertical"
+    tools:context="com.example.mat.flaborfit.DetailsActivity">
+
+    <TextView
+        android:id="@+id/exerciseTitle"
+        android:layout_width="421dp"
+        android:layout_height="60dp"
+        android:paddingTop="15dp"
+        android:text="Weight Lifting"
+        android:textAlignment="center"
+        android:textColor="#ffffffff"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/exerciseImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:srcCompat="@drawable/weight" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="@drawable/rounded_corners"
+        android:backgroundTint="#20000000"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:text="Mark It Complete!"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+
+        <CheckBox
+            android:id="@+id/setOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:paddingLeft="100dp"
+            android:paddingRight="5dp"
+            android:text="Complete set 1"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/setTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:paddingLeft="100dp"
+            android:paddingRight="5dp"
+            android:text="Complete set 1"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/setThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:paddingLeft="100dp"
+            android:paddingRight="5dp"
+            android:text="Complete set 1"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/setFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:paddingLeft="100dp"
+            android:paddingRight="5dp"
+            android:text="Complete set 1"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <CheckBox
+            android:id="@+id/setFive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#ffffff"
+            android:paddingRight="5dp"
+            android:paddingStart="100dp"
+            android:text="Complete set 1"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/returnBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Return" />
+
+    </LinearLayout>
+</LinearLayout>
