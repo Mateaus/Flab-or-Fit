@@ -2,6 +2,7 @@
 Android Application
 
 Udemy Course [Android N: From Beginner to Paid Professional] (https://www.udemy.com/learn-android/learn/v4/overview)
+What I learnend from this part of the course:
 - Introduction to how to create an activity and move from Main Activity to another activity.
 - Learned how to have 1 activity as a layout for multiple purposes. Ex. Details activity can change appareance and the information in it just by using 1 activity instead of creating multiple activities for each change(Weight Lifting, Yoga, Cardio).
 
