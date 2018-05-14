@@ -77,6 +77,15 @@ public class DetailsActivity extends AppCompatActivity implements View.OnClickLi
             } else {
                 setFive.setChecked(false);
             }
+            if ((btn1.equalsIgnoreCase("checked")) && (btn2.equalsIgnoreCase("checked"))
+                    && (btn3.equalsIgnoreCase("checked")) && (btn4.equalsIgnoreCase("checked"))
+                    && (btn5.equalsIgnoreCase("checked"))) {
+                setOne.setChecked(false);
+                setTwo.setChecked(false);
+                setThree.setChecked(false);
+                setFour.setChecked(false);
+                setFive.setChecked(false);
+            }
 
             setOne.setOnClickListener(this);
             setTwo.setOnClickListener(this);
