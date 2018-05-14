@@ -45,6 +45,17 @@ public class MainActivity extends AppCompatActivity {
             mainLayout.setBackgroundColor(getResources().getColor(R.color.colorAccent, getApplicationContext().getTheme()));
         }
 
+        if (DetailsActivity.btn1.equalsIgnoreCase("checked")
+                || DetailsActivity.btn2.equalsIgnoreCase("checked")
+                || DetailsActivity.btn3.equalsIgnoreCase("checked")
+                || DetailsActivity.btn4.equalsIgnoreCase("checked")
+                || DetailsActivity.btn5.equalsIgnoreCase("checked")) {
+            DetailsActivity.weightResults = String.valueOf(DetailsActivity.progress);
+            weightResult.setText(DetailsActivity.weightResults + "%");
+        } else {
+            DetailsActivity.progress -= 20;
+        }
+
 
         weightBtn.setOnClickListener(new View.OnClickListener() {
             @Override
