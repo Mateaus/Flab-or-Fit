@@ -13,7 +13,7 @@ import android.content.Intent;
 public class SettingsActivity extends AppCompatActivity {
 
     public static String mode = "light";
-    CheckBox nightMode;
+    public static CheckBox nightMode;
     Button returnBtn;
     LinearLayout settingLayout;
 
@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        getSupportActionBar().setTitle("Settings");
+        //getSupportActionBar().setTitle("Settings"); //Don't use this if toolbar is gone, else it will crash everything!
 
         nightMode = (CheckBox)findViewById(R.id.nightMode);
         settingLayout = (LinearLayout)findViewById(R.id.settingLayout);
@@ -31,9 +31,11 @@ public class SettingsActivity extends AppCompatActivity {
         if (mode.equalsIgnoreCase("night")) {
             nightMode.setChecked(true);
             settingLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getApplicationContext().getTheme()));
+            nightMode.setTextColor(getResources().getColor(R.color.colorAccent));
         } else {
             nightMode.setChecked(false);
             settingLayout.setBackgroundColor(getResources().getColor(R.color.colorAccent, getApplicationContext().getTheme()));
+            nightMode.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
         }
 
         nightMode.setOnClickListener(new View.OnClickListener() {
@@ -43,10 +45,12 @@ public class SettingsActivity extends AppCompatActivity {
                     mode = "night";
                     MainActivity.mainLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getApplicationContext().getTheme()));
                     settingLayout.setBackgroundColor(getResources().getColor(R.color.colorPrimary, getApplicationContext().getTheme()));
+                    nightMode.setTextColor(getResources().getColor(R.color.colorAccent));
                 } else {
                     mode = "light";
                     MainActivity.mainLayout.setBackgroundColor(getResources().getColor(R.color.colorAccent, getApplicationContext().getTheme()));
                     settingLayout.setBackgroundColor(getResources().getColor(R.color.colorAccent, getApplicationContext().getTheme()));
+                    nightMode.setTextColor(getResources().getColor(R.color.colorPrimaryDark));
                 }
             }
         });
