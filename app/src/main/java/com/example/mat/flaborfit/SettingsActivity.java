@@ -22,7 +22,7 @@ public class SettingsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
-        //getSupportActionBar().setTitle("Settings"); //Don't use this if toolbar is gone, else it will crash everything!
+        /*getSupportActionBar().setTitle("Settings"); Don't use this if toolbar is gone, else it will crash everything!*/
 
         nightMode = (CheckBox)findViewById(R.id.nightMode);
         settingLayout = (LinearLayout)findViewById(R.id.settingLayout);
